@@ -1,5 +1,6 @@
 package rat
 
+// Widget knows how to represent a box
 type Widget interface {
 	SetBox(Box)
 	GetBox() Box
@@ -8,6 +9,7 @@ type Widget interface {
 	Destroy()
 }
 
+// WidgetStack is a stack of Widget elements
 type WidgetStack interface {
 	Widget
 	Push(w Widget)
@@ -26,6 +28,7 @@ type widgetStackElement struct {
 	previous *widgetStackElement
 }
 
+// NewWidgetStack creates a new WidgetStack
 func NewWidgetStack() WidgetStack {
 	return &widgetStack{}
 }
