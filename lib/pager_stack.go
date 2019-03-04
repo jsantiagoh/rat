@@ -249,13 +249,11 @@ func golden(n, totalSize, offset int) []boxSize {
 	big := int(math.Floor(float64(totalSize) / math.Phi))
 	small := totalSize - big - 1
 
-	return append([]boxSize{boxSize{offset, small}},
-		golden(n-1, big, offset+small+1)...)
+	return append(golden(n-1, small, offset), boxSize{offset + small + 1, big})
 }
 
 // goldenSizes splits panes using the golden ratio
 // of Phi making the active pane bigger
 func goldenSizes(n, totalSize int) []boxSize {
-	sizes := golden(n, totalSize, 0)
-	return sizes
+	return golden(n, totalSize, 0)
 }

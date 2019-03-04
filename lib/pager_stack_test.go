@@ -32,7 +32,7 @@ func TestGoldenSizes(t *testing.T) {
 	}{
 		{1, 120, []boxSize{boxSize{0, 120}}},
 		{2, 120, []boxSize{boxSize{0, 45}, boxSize{46, 74}}},
-		{3, 120, []boxSize{boxSize{0, 45}, boxSize{46, 28}, boxSize{75, 45}}},
+		{3, 120, []boxSize{boxSize{0, 17}, boxSize{18, 27}, boxSize{46, 74}}},
 	}
 
 	for _, tt := range tests {
