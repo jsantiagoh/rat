@@ -117,7 +117,7 @@ func (ps *pagerStack) visiblePagers() []Pager {
 }
 
 func (ps *pagerStack) splitHorizontal() bool {
-	return ps.box.Width() > 180
+	return ps.box.Width() > 100
 }
 
 func (ps *pagerStack) layout() {
@@ -138,9 +138,13 @@ func (ps *pagerStack) layout() {
 		bs := boxSizes[i]
 
 		if ps.splitHorizontal() {
-			p.SetBox(NewBox(bs.offset, 0, bs.size, ps.box.Height()))
+			p.SetBox(NewBox(
+				bs.offset, 0,
+				bs.size, ps.box.Height()))
 		} else {
-			p.SetBox(NewBox(0, bs.offset, ps.box.Width(), bs.size))
+			p.SetBox(NewBox(
+				0, bs.offset,
+				ps.box.Width(), bs.size))
 		}
 	}
 }
