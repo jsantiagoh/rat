@@ -19,8 +19,16 @@ Shell commands are executed and the output is captured and displayed in pagers. 
 
 ### Install
 
+#### Using brew
+
 ```shell
-$ go get github.com/ericfreese/rat
+$ brew tap jsantiagoh/rat
+$ brew install rat
+```
+
+#### From Source
+```shell
+$ git clone https://github.com/jsantiagoh/rat.git
 $ go build && go install
 ```
 
@@ -167,9 +175,11 @@ If `--cmd` is not provided, rat will read from STDIN.
 
 ## Development
 
+Go 1.11 (or higher) with GO11MODULE=on is required.
+
 ### Dependencies
 
-Dependencies are managed using [`glide`](https://github.com/Masterminds/glide).
+Dependencies are managed using go modules.
 
 ## License
 
