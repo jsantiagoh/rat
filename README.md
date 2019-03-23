@@ -1,10 +1,10 @@
 # Rat
+[![GoDoc](https://godoc.org/github.com/jsantiagoh/rat?status.svg)](https://godoc.org/github.com/jsantiagoh/rat)
+[![Build Status](https://travis-ci.org/jsantiagoh/rat.svg?branch=master)](https://travis-ci.org/jsantiagoh/rat)
 
-_Compose shell commands to build terminal applications_
+Compose shell commands to build terminal applications 
 
-[![Join the chat at https://gitter.im/rat-chat/Lobby](https://badges.gitter.im/rat-chat/Lobby.svg)](https://gitter.im/rat-chat/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![GoDoc](https://godoc.org/github.com/ericfreese/rat?status.svg)](https://godoc.org/github.com/ericfreese/rat)
-[![Build Status](https://travis-ci.org/ericfreese/rat.svg?branch=master)](https://travis-ci.org/ericfreese/rat)
+_This is a fork of the awesome [ericfreese/rat](https://github.com/ericfreese/rat)_
 
 ![](demo.gif)
 
@@ -20,8 +20,16 @@ Shell commands are executed and the output is captured and displayed in pagers. 
 
 ### Install
 
+#### Using brew
+
 ```shell
-$ go get github.com/ericfreese/rat
+$ brew tap jsantiagoh/rat
+$ brew install rat
+```
+
+#### From Source
+```shell
+$ git clone https://github.com/jsantiagoh/rat.git
 $ go build && go install
 ```
 
@@ -168,9 +176,11 @@ If `--cmd` is not provided, rat will read from STDIN.
 
 ## Development
 
+Go 1.11 (or higher) with GO11MODULE=on is required.
+
 ### Dependencies
 
-Dependencies are managed using [`glide`](https://github.com/Masterminds/glide).
+Dependencies are managed using go modules.
 
 ## License
 
