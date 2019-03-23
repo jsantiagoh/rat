@@ -1,9 +1,10 @@
 # Rat
-
-_Compose shell commands to build terminal applications_
-
 [![GoDoc](https://godoc.org/github.com/jsantiagoh/rat?status.svg)](https://godoc.org/github.com/jsantiagoh/rat)
 [![Build Status](https://travis-ci.org/jsantiagoh/rat.svg?branch=master)](https://travis-ci.org/jsantiagoh/rat)
+
+Compose shell commands to build terminal applications 
+
+_This is a fork of the awesome [ericfreese/rat](https://github.com/ericfreese/rat)_
 
 ![](demo.gif)
 
