@@ -2,9 +2,8 @@
 
 _Compose shell commands to build terminal applications_
 
-[![Join the chat at https://gitter.im/rat-chat/Lobby](https://badges.gitter.im/rat-chat/Lobby.svg)](https://gitter.im/rat-chat/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![GoDoc](https://godoc.org/github.com/ericfreese/rat?status.svg)](https://godoc.org/github.com/ericfreese/rat)
-[![Build Status](https://travis-ci.org/ericfreese/rat.svg?branch=master)](https://travis-ci.org/ericfreese/rat)
+[![GoDoc](https://godoc.org/github.com/jsantiagoh/rat?status.svg)](https://godoc.org/github.com/jsantiagoh/rat)
+[![Build Status](https://travis-ci.org/jsantiagoh/rat.svg?branch=master)](https://travis-ci.org/jsantiagoh/rat)
 
 ![](demo.gif)
 
