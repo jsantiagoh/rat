@@ -1,6 +1,7 @@
 # Rat
 [![GoDoc](https://godoc.org/github.com/jsantiagoh/rat?status.svg)](https://godoc.org/github.com/jsantiagoh/rat)
 [![Build Status](https://travis-ci.org/jsantiagoh/rat.svg?branch=master)](https://travis-ci.org/jsantiagoh/rat)
+[![GolangCI](https://golangci.com/badges/github.com/jsantiagoh/rat.svg)](https://golangci.com/r/github.com/jsantiagoh/rat)
 
 Compose shell commands to build terminal applications 
 
